@@ -10,8 +10,8 @@ import lombok.Data;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class LoginOrRegisterDto {
 
-    @JsonProperty("username")
-    private String username;
+    @JsonProperty("email")
+    private String email;
 
     @JsonProperty("password")
     private String password;
