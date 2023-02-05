@@ -12,6 +12,7 @@ import java.util.HashMap;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:3000")
+@RequestMapping("/auth")
 public class AuthController {
     @RequestMapping(value="/login", method = RequestMethod.POST)
     public ResponseWrapper login(@RequestBody RequestWrapper<LoginOrRegisterDto> request) {
